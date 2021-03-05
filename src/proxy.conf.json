@@ -1,0 +1,8 @@
+{
+    "/": {
+      "target": "http://18.217.52.34:8080",
+      "secure": false
+    }
+    ,
+    "changeOrigin": true
+  }

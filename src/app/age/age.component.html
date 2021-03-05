@@ -1,0 +1,20 @@
+<div class="container"
+>
+
+<h1 style="color: aqua;">Welcome to Age calculator app</h1>
+<p style="color: rgba(255, 0, 13, 0.993);">Calculate Exact how old are you</p>
+<input type="text" [(ngModel)]="date" nz-input placeholder= "Enter Birth Date ex 1990-12-27 " style="color: rgb(226, 43, 43);" />
+<button  nz-button   nzSize="large"  style="color: rgb(0, 4, 255);"  nzSearch (click)="getAge()" >Calculate Age</button>
+<br/> {{age.years}} <div style="color: brown;">years</div>{{age.months}}<div style="color: blueviolet;">months</div>{{age.days}}<div style="color: blue;">days</div>
+
+    <img  [src]="myimage" width="100" height="100" alt="">
+
+</div>
+
+
+
+   
+
+     
+
+  
