@@ -19,8 +19,9 @@ export class AgeComponent implements OnInit {
 
   getAge()
   {
-    this.http.get<any>('http://18.217.52.34:8080/home?birthDate='+this.date).subscribe(data => {
-      this.age = data;
+    this.http.get<any>('http://localhost:8080/home?birthDate='+this.date).subscribe(data => {
+  this.age = data;
+      
       console.log(data);
   })   
   }
