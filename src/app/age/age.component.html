@@ -1,21 +1,39 @@
 <div class="container"
 >
 
-<marquee> <h1 style="color: aqua;">Welcome to Age calculator app</h1></marquee>
- <marquee  behavior="alternate" direction="right" scrollamount="5"><p style="color: rgba(255, 0, 13, 0.993);">Calculate Exact how old are you</p></marquee>
-<input type="date" [(ngModel)]="date" nz-input placeholder= "Enter Birth Date ex 1990-12-27 " style="color: rgb(226, 43, 43);" />
-<button  nz-button   nzSize="large"  style="color: rgb(0, 4, 255);"  nzSearch (click)="getAge()" >Calculate Age</button>
-<br/>
-<br/> {{age.years}} <div style="color: brown;">years</div>{{age.months}}<div style="color: blueviolet;">months</div>{{age.days}}<div style="color: blue;">days</div>
+    <marquee> <h1 style="color: aqua;">Welcome to Age calculator app</h1></marquee>
+    <marquee  behavior="alternate" direction="right" scrollamount="10"><p style="color: rgba(255, 0, 13, 0.993);">Calculate Exact how old are you</p></marquee>
+    <input type="date" [(ngModel)]="date" style="color: rgb(226, 43, 43);font-size: 20px; border: solid darkolivegreen;" />
+    <button  nz-button nzType="default"  nzSearch (click)="getAge()" style="font-size: 20px;" >calculate age</button>
+    <br/>
+    <br/>
+    <table align="center">
+        <tr>
+            <td>
+                 <div  style="color: brown; font-size: 30px;">years=</div>
+            </td>
+            <td>
+                {{age.years}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="color: blueviolet; font-size: 30px;">months=</div>
+            </td>
+            <td>
+                {{age.months}}
+            </td>
+    <   /tr>
+        <tr>
+            <td>
+                <div style="color: blue;font-size: 30px;">days=</div>
+            </td>
+            <td>
+                {{age.days}}
+            </td>
+        </tr>
 
-    <img  [src]="myimage" width="100" height="100" alt="">
-
+    </table>
+    <br/>
+    <img *ngIf="myimage" [src]="myimage" width="200" height="200" alt="">
 </div>
-
-
-
-   
-
-     
-
-  

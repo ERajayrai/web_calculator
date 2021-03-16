@@ -1,21 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgeComponent } from './age.component';
-import { Component } from '@angular/core';
+import { TastComponent } from './tast.component';
 
-describe('AgeComponent', () => {
-  let component: AgeComponent;
-  let fixture: ComponentFixture<AgeComponent>;
+describe('TastComponent', () => {
+  let component: TastComponent;
+  let fixture: ComponentFixture<TastComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AgeComponent ]
+      declarations: [ TastComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgeComponent);
+    fixture = TestBed.createComponent(TastComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

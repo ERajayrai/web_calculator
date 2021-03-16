@@ -1,11 +1,5 @@
 .container{
-    
     text-align: center;
     background-color: goldenrod;
     border: 50px solid saddlebrown;
-    padding: 10%;
 }
-.input{
-    font-size: large;
-}
-
